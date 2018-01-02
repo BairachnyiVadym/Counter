@@ -1,12 +1,13 @@
 import React from 'react';
-const CounterView = () => {
+
+const CounterView = ({value, onIncrementClick, onDecrementClick}) => {
     return (
         <div>
-            <span>Clicked: 0 times</span>
+            <span>Clicked: {value} times</span>
             {' '}
-            <button>Increment</button>
+            <button onClick={onIncrementClick}>Increment</button>
             {' '}
-            <button>Decrement</button>
+            <button onClick={onDecrementClick}>Decrement</button>
             {' '}
             <button>Increment if odd</button>
             {' '}

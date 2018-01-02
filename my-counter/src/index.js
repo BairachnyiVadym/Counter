@@ -6,8 +6,9 @@ import registerServiceWorker from './registerServiceWorker';
 
 import {createStore} from "redux";
 import {Provider} from "react-redux";
+import CounterApp from './reducers/indexR'
 
-let store = createStore(() => {});
+let store = createStore(CounterApp);
 
 ReactDOM.render(
     <Provider store={store}>

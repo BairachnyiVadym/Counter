@@ -1,5 +1,6 @@
 import {connect} from "react-redux";
 import CounterView from "../components/CounterView";
+import {Decrement, Increment} from "../actions/actionCreators";
 
 const mapStateToProps = (state) => {
     return {
@@ -10,10 +11,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onIncrementClick: () => {
-            dispatch();
+            dispatch(Increment());
         },
         onDecrementClick: () => {
-            dispatch();
+            dispatch(Decrement());
         },
         onOddIncrementClick: () => {
             dispatch();
