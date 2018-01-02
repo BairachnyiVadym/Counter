@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CounterView = ({value, onIncrementClick, onDecrementClick}) => {
+const CounterView = ({value, onIncrementClick, onDecrementClick, onOddIncrementClick, onAsyncIncrementClick}) => {
     return (
         <div>
             <span>Clicked: {value} times</span>
@@ -9,9 +9,9 @@ const CounterView = ({value, onIncrementClick, onDecrementClick}) => {
             {' '}
             <button onClick={onDecrementClick}>Decrement</button>
             {' '}
-            <button>Increment if odd</button>
+            <button onClick={onOddIncrementClick}>Increment if odd</button>
             {' '}
-            <button>Increment async</button>
+            <button onClick={onAsyncIncrementClick}>Increment async</button>
         </div>
     );
 };
