@@ -1,8 +1,9 @@
 import React from 'react';
+import '../App.css';
 
 const CounterView = ({value, onIncrementClick, onDecrementClick, onOddIncrementClick, onAsyncIncrementClick}) => {
     return (
-        <div>
+        <div className="App">
             <span>Clicked: {value} times</span>
             {' '}
             <button onClick={onIncrementClick}>Increment</button>
