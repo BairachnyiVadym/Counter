@@ -1,4 +1,4 @@
-import {DECREMENT, INCREMENT, ODD_INCREMENT} from "../actions/actionCreators";
+import {ADD_NUM, DECREMENT, INCREMENT, ODD_INCREMENT} from "../actions/actionCreators";
 
 function CounterApp(state = 0, action) {
     switch (action.type) {
@@ -12,6 +12,8 @@ function CounterApp(state = 0, action) {
             } else {
                 return state;
             }
+        case ADD_NUM:
+            return state + action.num;
         default:
             return state;
     }
