@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../App.css';
 
 const CounterView = ({value, onIncrementClick, onDecrementClick, onOddIncrementClick, onAsyncIncrementClick}) => {
@@ -15,6 +16,14 @@ const CounterView = ({value, onIncrementClick, onDecrementClick, onOddIncrementC
             <button onClick={onAsyncIncrementClick}>Increment async</button>
         </div>
     );
+};
+
+CounterView.propTypes = {
+    value: PropTypes.number.isRequired,
+    onIncrementClick: PropTypes.func.isRequired,
+    onDecrementClick: PropTypes.func.isRequired,
+    onOddIncrementClick: PropTypes.func.isRequired,
+    onAsyncIncrementClick: PropTypes.func.isRequired
 };
 
 export default CounterView;
