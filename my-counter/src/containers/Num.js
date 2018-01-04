@@ -1,3 +1,4 @@
+/*
 import {connect} from "react-redux";
 import {AddNum} from "../actions/actionCreators";
 import GrabNum from "../components/GrabNum";
@@ -17,4 +18,4 @@ const Num = connect(
     mapDispatchToProps
 )(GrabNum);
 
-export default Num;
+export default Num;*/
